@@ -3,5 +3,15 @@ server:
   port: 5959
 
 # PostgreSQL Configuration (for DB)
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.31.56:5432/postgres
+    username: elshan
+    password: elshan
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
 # Redis Configuration (for LOG)
 # RabbitMQ Configuration (for MQ)
